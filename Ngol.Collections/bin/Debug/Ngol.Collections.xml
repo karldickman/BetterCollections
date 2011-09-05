@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>/home/karl/Code/Collections/Ngol.Collections/bin/Debug/Ngol.Collections</name>
+    </assembly>
+    <members>
+        <member name="T:Ngol.Collections.IIterable">
+            <summary>
+            Exposes the iterator, which supports a simple iteration over a non-generic collection.
+            </summary>
+            <remarks>
+            For the generic version of this interface, see Ngol.Collections.Generic.IEnumerable&lt;T&gt;.
+            </remarks>
+        </member>
+        <member name="M:Ngol.Collections.IIterable.GetIterator">
+            <summary>
+            Returns an iterator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="T:Ngol.Collections.IIterator">
+            <summary>
+            Supports a simple iteration over a nongeneric collection.
+            </summary>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IIterable`1">
+            <summary>
+            Exposes the iterator, which supports a simple iteration over a collection of a specified type.
+            </summary>
+            <typeparam name="T">
+            The type of values over which to iterate.
+            </typeparam>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IIterable`1.GetIterator">
+            <summary>
+            Returns an iterator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IIterator`1">
+            <summary>
+            Supports a simple itertion over a generic collection.
+            </summary>
+            <typeparam name="T">
+            The type of values over which to iterate.
+            </typeparam>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IIterator`1.Current">
+            <summary>
+            Gets the element in the collection at the current position of the iteration.
+            </summary>
+        </member>
+        <member name="T:Ngol.Collections.ICollection">
+            <summary>
+            Defines methods to manipulate nongeneric collections.
+            </summary>
+        </member>
+        <member name="M:Ngol.Collections.ICollection.Add(System.Object)">
+            <summary>
+            Adds an item to the collection.
+            </summary>
+            <param name="value">
+            The item to add to the collection.
+            </param>
+        </member>
+        <member name="M:Ngol.Collections.ICollection.Remove(System.Object)">
+            <summary>
+            Removes the first occurrence of a specified object from the collection.
+            </summary>
+            <param name="value">
+            The item to remove.
+            </param>
+            <returns>
+                <see langword="true" /> if <paramref name="value" /> was successfully removed from the collection;
+            otherwise, <see langword="false" />. This method also returns <see langword="false" />
+            if <paramref name="value" /> is not found in the original collection.
+            </returns>
+        </member>
+        <member name="T:Ngol.Collections.Generic.ICollection`1">
+            <summary>
+            Defines methods to manipulate generic collections.
+            </summary>
+            <typeparam name="T">
+            The type of values in the collection.
+            </typeparam>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ICollection`1.Add(`0)">
+            <summary>
+            Adds an item to the collection.
+            </summary>
+            <param name="value">
+            The item to add to the collection.
+            </param>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ICollection`1.Remove(`0)">
+            <summary>
+            Removes the first occurrence of a specified object from the collection.
+            </summary>
+            <param name="value">
+            The item to remove.
+            </param>
+            <returns>
+                <see langword="true" /> if <paramref name="value" /> was successfully removed from the collection;
+            otherwise, <see langword="false" />. This method also returns <see langword="false" />
+            if <paramref name="value" /> is not found in the original collection.
+            </returns>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IList`1">
+            <summary>
+            Represents a collection of objects that can be accessed by index.
+            </summary>
+            <typeparam name="T">
+            The type of values in the collection.
+            </typeparam>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IList`1.Item(System.Int32)">
+            <summary>
+            Set the value at the specified index.
+            </summary>
+            <param name="index">
+            The index at which to set the value.
+            </param>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IList`1.Insert(System.Int32,`0)">
+            <summary>
+            Insert a value to the list at the specified index.
+            </summary>
+            <param name="index">
+            The index at which to insert the value.
+            </param>
+            <param name="value">
+            The value to insert into the list.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="index" /> is not a valid index of the list.
+            </exception>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IIndexable`1">
+            <summary>
+            Represents a collection of objects that can be individually accessed by index.
+            </summary>
+            <typeparam name="T">
+            The type of values in the collection.
+            </typeparam>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IIndexable`1.Item(System.Int32)">
+            <summary>
+            Gets the element at the specified index.
+            </summary>
+            <param name="index">
+            Zero-based index of the element to get.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="index" /> is not a valid index on the collection.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IIndexable`1.IndexOf(`0)">
+            <summary>
+            Get the index of the specified element in the collection.
+            </summary>
+            <param name="value">
+            The value for which to search.
+            </param>
+            <returns>
+            The index of the first occurrence of <paramref name="value" />.
+            </returns>
+        </member>
+        <member name="T:Ngol.Collections.IIndexable">
+            <summary>
+            Represents a collection of objects that can be individually accessed by index.
+            </summary>
+        </member>
+        <member name="P:Ngol.Collections.IIndexable.Item(System.Int32)">
+            <summary>
+            Gets the element at the specified index.
+            </summary>
+            <param name="index">
+            Zero-based index of the element to get.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="index" /> is not a valid index on the collection.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.IIndexable.IndexOf(System.Object)">
+            <summary>
+            Get the index of the specified element in the collection.
+            </summary>
+            <param name="value">
+            The value for which to search.
+            </param>
+            <returns>
+            The index of the first occurrence of <paramref name="value" />.
+            </returns>
+        </member>
+        <member name="T:Ngol.Collections.IList">
+            <summary>
+            Represents a collection of objects that can be accessed by index.
+            </summary>
+        </member>
+        <member name="M:Ngol.Collections.IList.Insert(System.Int32,System.Object)">
+            <summary>
+            Insert a value to the list at the specified index.
+            </summary>
+            <param name="index">
+            The index at which to insert the value.
+            </param>
+            <param name="value">
+            The value to insert into the list.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="index" /> is not a valid index of the list.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.IList.RemoveAt(System.Int32)">
+            <summary>
+            Removes the value from the list at the specified index.
+            </summary>
+            <param name="index">
+            The zero-based index of the value to remove.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="index" /> is not a valid index of the list.
+            </exception>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IReadableSet`1">
+            <summary>
+            Provides the base interface for reading sets.
+            </summary>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableSet`1.IsProperSubsetOf(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Determines whether the current set is a proper subset of
+            the specified collection.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <returns>
+                <see langword="true" /> if the current set is a proper subset of <paramref name="other" />;
+            otherwise <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableSet`1.IsProperSupersetOf(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Determines whether the current set is a proper superset of
+            the specified collection.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <returns>
+                <see langword="true" /> if the current set is a proper superset of <paramref name="other" />;
+            otherwise <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableSet`1.IsSubsetOf(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Determines whether the current set is a subset of
+            the specified collection.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <returns>
+                <see langword="true" /> if the current set is a subset of <paramref name="other" />;
+            otherwise <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableSet`1.IsSupersetOf(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Determines whether the current set is a superset of
+            the specified collection.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <returns>
+                <see langword="true" /> if the current set is a superset of <paramref name="other" />;
+            otherwise <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableSet`1.Overlaps(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Determines wheter the current set overlaps with the specified collection.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <returns>
+                <see langword="true" /> if the current set and <paramref name="other" />
+            share at least one commone value; otherwise <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableSet`1.SetEquals(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Determines whether the current set and the specified collection contain
+            the same values.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <returns>
+                <see langword="true" /> if the current set is equal to <paramref name="other" />; otherwise
+            <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="T:Ngol.Collections.Generic.ISet`1">
+            <summary>
+            Provides the base interface for manipulating sets.
+            </summary>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ISet`1.Add(`0)">
+            <summary>
+            Add a value to the current set and return a <see cref="T:System.Boolean" /> to indicate if
+            the element was successfully added.
+            </summary>
+            <param name="value">
+            The value to add to the set.
+            </param>
+            <returns>
+                <see langword="true" /> if the value had not been previously added to the set;
+            <see langword="false" /> if the element was already in the set.
+            </returns>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ISet`1.ExceptWith(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Removes all value of the specified collection from the current set.
+            </summary>
+            <param name="other">
+            The collection of values to remove from the set.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ISet`1.IntersectWith(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Modifies the current set so that it contains only elements that are also in the specified
+            collection.
+            </summary>
+            <param name="other">
+            The collection to compare with the current set.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ISet`1.SymmetricExceptWith(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Modifies the current set so that it contains only elements that are present
+            either in the current set or in the specified collection, but not both.
+            </summary>
+            <param name="other">
+            The collection of values to compare with the current set.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.ISet`1.UnionWith(Ngol.Collections.Generic.IIterable{`0})">
+            <summary>
+            Modifies the current set so that it contains all elements that are present in both the current set and
+            in the specified collection.
+            </summary>
+            <param name="other">
+            The collection to compare to the current set.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="other" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IReadableDictionary`2">
+            <summary>
+            A generic collection of key/value pairs.
+            </summary>
+            <typeparam name="TKey">
+            The type of keys in the dictionary.
+            </typeparam>
+            <typeparam name="TValue">
+            The type of values in the dictionary.
+            </typeparam>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IReadableDictionary`2.Item(`0)">
+            <summary>
+            Get the value with the specified key.
+            </summary>
+            <param name="key">
+            The key of the value to get.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            The <paramref name="key" /> is <see langword="null" />.
+            </exception>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">
+            The property is retrieved and <paramref name="key" /> is not found.
+            </exception>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IReadableDictionary`2.Keys">
+            <summary>
+            Gets a collection containing the keys of the dictionary.
+            </summary>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IReadableDictionary`2.Values">
+            <summary>
+            Gets a collection containing the values of the dictionary.
+            </summary>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableDictionary`2.ContainsKey(`0)">
+            <summary>
+            Determines whether the dictionary contains an element with the specified key.
+            </summary>
+            <param name="key">
+            The key to locate in the dictionary.
+            </param>
+            <returns>
+                <see langword="true" /> if the dictionary contains an value with the specified key; otherwise, <see langword="false" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            The <paramref name="key" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IReadableDictionary`2.TryGetValue(`0,`1@)">
+            <summary>
+            Get the value associated with the specified key.
+            </summary>
+            <param name="key">
+            The key whose value to get.
+            </param>
+            <param name="value">
+            When this method returns, the value associated with the specified key, if the key is found.
+            Otherwise, the default value for the type of the paramter.  This parameter is passed uninitialized.
+            </param>
+            <returns>
+                <see langword="true" /> if the dictionary contains an value with the specified key; otherwise, <see langword="false" />.
+            </returns>
+        </member>
+        <member name="T:Ngol.Collections.Generic.IDictionary`2">
+            <summary>
+            A generic collection of key/value pairs.
+            </summary>
+            <typeparam name="TKey">
+            The type of keys in the dictionary.
+            </typeparam>
+            <typeparam name="TValue">
+            The type of values in the dictionary.
+            </typeparam>
+        </member>
+        <member name="P:Ngol.Collections.Generic.IDictionary`2.Item(`0)">
+            <summary>
+            Set the value with the specified key.
+            </summary>
+            <param name="key">
+            The key of the value to set.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            The <paramref name="key" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IDictionary`2.Add(`0,`1)">
+            <summary>
+            Add an element with the specified key and value to the dictionary.
+            </summary>
+            <param name="key">
+            The key of the value to add.
+            </param>
+            <param name="value">
+            The value to add.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="key" /> is <see langword="null" />.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            Thrown if a value with the same key already exists in the dictionary.
+            </exception>
+        </member>
+        <member name="M:Ngol.Collections.Generic.IDictionary`2.Remove(`0)">
+            <summary>
+            Remove the value with the specified key from the dictionary.
+            </summary>
+            <param name="key">
+            The key fo the value to remove.
+            </param>
+            <returns>
+                <see langword="true" /> if the value is successfully removed;
+            otherwise, <see langword="false" />.  This method also returns <see langword="false" /> if
+            <paramref name="key" /> was not found in the original dictionary.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="key" /> is <see langword="null" />.
+            </exception>
+        </member>
+    </members>
+</doc>

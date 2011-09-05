@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A73A5F42-F973-4809-9EF4-26AC2A57EAD5}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Tarball">
+          <Builder TargetDirectory="Ngol.Collections" DefaultConfiguration="Debug" ctype="TarballDeployTarget">
+            <ChildEntries>
+              <SolutionItemReference path="Ngol.Collections\Ngol.Collections.csproj" />
+            </ChildEntries>
+            <RootEntry path="Ngol.Collections.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>

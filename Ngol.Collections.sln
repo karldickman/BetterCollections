@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ngol.Collections", "Ngol.Collections\Ngol.Collections.csproj", "{1437946F-E778-480A-BBBD-DFEB4297C3A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packaging", "Packaging", "{7496E6F7-F36B-463C-B9B0-15882217F897}"
+EndProject
+Project("{9344bdbb-3e7f-41fc-a0dd-8665d75ee146}") = "Packages", "Packaging\Packages.mdproj", "{A73A5F42-F973-4809-9EF4-26AC2A57EAD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1437946F-E778-480A-BBBD-DFEB4297C3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1437946F-E778-480A-BBBD-DFEB4297C3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1437946F-E778-480A-BBBD-DFEB4297C3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1437946F-E778-480A-BBBD-DFEB4297C3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73A5F42-F973-4809-9EF4-26AC2A57EAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73A5F42-F973-4809-9EF4-26AC2A57EAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A73A5F42-F973-4809-9EF4-26AC2A57EAD5} = {7496E6F7-F36B-463C-B9B0-15882217F897}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Ngol.Collections\Ngol.Collections.csproj
+	EndGlobalSection
+EndGlobal
